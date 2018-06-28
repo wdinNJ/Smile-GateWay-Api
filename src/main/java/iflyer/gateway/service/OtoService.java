@@ -1,9 +1,8 @@
 package iflyer.gateway.service;
 
-import iflyer.gateway.core.APIMapping;
-import iflyer.gateway.modle.OrderInfo;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+
+import iflyer.gateway.modle.OrderInfo;
 
 /**
  * @Package: iflyer.gateway.service
@@ -13,11 +12,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface OtoService {
-    void payment(String orderId);
+  void payment(String orderId);
 
-    OrderInfo getOrderInfo(String orderId);
+  OrderInfo getOrderInfo(String orderId);
 
 
-    OrderInfo getOrderDo(OrderInfo orderInfo);
+  OrderInfo getOrderDo(OrderInfo orderInfo);
 
 }
